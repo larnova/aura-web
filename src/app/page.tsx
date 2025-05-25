@@ -63,6 +63,15 @@ export default function Home() {
   const chatEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (
+      window.performance &&
+      window.performance.navigation.type ===
+        window.performance.navigation.TYPE_RELOAD
+    )
+      sessionStorage.clear();
+  }, []);
+
+  useEffect(() => {
     try {
       (async function () {
         const response = await fetch("/.netlify/functions/suggestions");
@@ -231,7 +240,7 @@ export default function Home() {
           </div>
           <p className="text-[#2660f2] text-center text-sm lg:text-base mt-2 ">
             <Link href="/feedback">
-              Do you have ideas on how we can make agora better, let us know.
+              Do you have ideas on how we can make Aura better, let us know.
             </Link>
           </p>
         </section>
