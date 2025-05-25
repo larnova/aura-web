@@ -270,7 +270,7 @@ const Welcome = ({
         <h2
           className={`${gabarito.className} text-4xl lg:text-6xl font-semibold text-center`}
         >
-          Welcome to Agora
+          Welcome to Aura
         </h2>
         <p className="text-sm lg:text-lg w-4/5 max-w-96 text-center mx-auto mt-4">
           Shopping just got better! I am here to get you the product you need.

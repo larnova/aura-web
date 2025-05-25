@@ -6,8 +6,8 @@ import Navigation from "@/components/Navigation";
 import MainBackGround from "@/components/MainBackGround";
 
 export const metadata: Metadata = {
-  title: "Agora",
-  description: "AI personal shopping assistant",
+  title: "AURA AI",
+  description: "AI Unified Retail Assistant",
 };
 
 export default function RootLayout({

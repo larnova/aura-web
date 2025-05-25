@@ -12,8 +12,12 @@ const Navigation = () => {
   };
   return (
     <div className="flex lg:flex-col justify-between h-fit p-5 lg:px-0 lg:py-7 lg:items-center border-b lg:border-r lg:h-screen">
-      <div className="basis-full flex justify-center lg:basis-0 lg:block ml-12 lg:ml-0">
-        <button onClick={handleSessionClear}>{logoSVG}</button>
+      <div
+        onClick={handleSessionClear}
+        className="basis-full flex justify-center items-center lg:basis-0 lg:block ml-12 lg:ml-0"
+      >
+        <button className="flex justify-center lg:w-full">{logoSVG}</button>
+        <p className="font-bold">Aura AI</p>
       </div>
       <div>
         <Link href="/feedback">{supportSVG}</Link>
